@@ -7,15 +7,17 @@ function Home() {
     return(
         <div>
           <header>
-           <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="fixed-top">
-  <Navbar.Brand href="#home"><img src={logo} alt="Logo"/></Navbar.Brand>
+           <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className="fixed-top">
+             <div className="d-flex">
+  <Navbar.Brand href="#home"><img src={logo} alt="Logo" className="w-100"/></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  </div>
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto">
       <Nav.Link href="#Men" className="text-light">Men</Nav.Link>
-      <Nav.Link href="#Women" className="px-3 text-light">Women</Nav.Link>
+      <Nav.Link href="#Women" className="px-sm-3 text-light">Women</Nav.Link>
       <Nav.Link href="#Kids" className="text-light">Kids</Nav.Link>
-      <Nav.Link href="#About" className="px-3 text-light">About Us</Nav.Link>
+      <Nav.Link href="#About" className="px-sm-3 text-light">About Us</Nav.Link>
       <Nav.Link href="#Contact" className="text-light">Contact</Nav.Link>
     </Nav>
   </Navbar.Collapse>
@@ -26,7 +28,7 @@ function Home() {
 
 {/* Start of body */}
 <body>
-<section>
+<section className="mt-5 pt-3">
 <Carousel className="">
   <Carousel.Item>
     <img
@@ -35,8 +37,9 @@ function Home() {
       alt="First slide"
     />
     <Carousel.Caption>
+      <div>
       <button className="btn rounded-pill btn-grad"><h5 className="font-weight-normal text-white pt-1">Kids Collection</h5></button>
-      <p className="text-dark my-3">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -49,8 +52,8 @@ function Home() {
     <Carousel.Caption>
       <div>
     <button className="btn rounded-pill btn-grad"><h5 className="font-weight-normal text-white pt-1">Women Collection</h5></button>
+
     </div>
-      <p className="text-dark my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -61,14 +64,15 @@ function Home() {
     />
 
     <Carousel.Caption>
+      <div>
     <button className="btn rounded-pill btn-grad"><h5 className="font-weight-normal text-white pt-1">Men Collection</h5></button>
-      <p className="text-dark my-3">Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
 </section>
 
-<h2 className="text-center col-7 mx-auto my-5 font-weight-normal font-italic">It all began with a simple idea of Creating Quality and Well-Designed products that everyone can get and have a great experiance like we wanted for our self.</h2>
+<h4 className="text-center mx-auto my-5 font-weight-normal col-sm-7 font-italic">It all began with a simple idea of Creating Quality and Well-Designed products that everyone can get and have a great experiance like we wanted for our self.</h4>
 
 </body>
 {/* End of body */}
