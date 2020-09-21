@@ -1,13 +1,18 @@
 import React from 'react';
 import { Navbar, Nav, Carousel, Card} from 'react-bootstrap';
 import './App.css';
+import { Link } from 'react-router-dom';
 import logo from './logo.png';
 import shoes1 from './shoes1.jpg';
 import shoes2 from './shoes2.jpg';
 import shoes3 from './shoes3.jpg';
 import shoes4 from './shoes4.jpg';
 import shoes5 from './shoes5.jpg';
-import shoes6 from './shoes6.jpg';
+import shoes7 from './shoes7.jpg';
+import shoes8 from './shoes8.jpg';
+import shoes9 from './shoes9.jpg';
+import shoes10 from './shoes10.jpg';
+import shoes11 from './shoes11.jpg';
 
 function Home() {
     return(
@@ -23,7 +28,7 @@ function Home() {
       <Nav.Link href="#Men" className="text-light">Men</Nav.Link>
       <Nav.Link href="#Women" className="px-sm-3 text-light">Women</Nav.Link>
       <Nav.Link href="#Kids" className="text-light">Kids</Nav.Link>
-      <Nav.Link href="#About" className="px-sm-3 text-light">About Us</Nav.Link>
+      <Nav.Link href="#About" className="px-sm-3 text-light"><Link to="/AboutUs">About Us</Link></Nav.Link>
       <Nav.Link href="#Contact" className="text-light">Contact</Nav.Link>
     </Nav>
   </Navbar.Collapse>
@@ -45,7 +50,7 @@ function Home() {
     />
     <Carousel.Caption>
       <div>
-      <button className="btn rounded-pill btn-grad"><h5 className="font-weight-normal text-white pt-1">Kids Collection</h5></button>
+      <button className="btn rounded-pill btn-grad"><h5 className="font-weight-normal text-white pt-1">Seasonal</h5></button>
       </div>
     </Carousel.Caption>
   </Carousel.Item>
@@ -67,7 +72,7 @@ function Home() {
   <Carousel.Item>
     <img
       className="d-block col-md-6 mx-auto"
-      src={shoes3}
+      src={shoes7}
       // src="https://www.netclipart.com/pp/m/209-2099851_leather-shoes-png-shoes-for-men-png.png"
       alt="Third slide"
     />
@@ -87,7 +92,7 @@ function Home() {
 
   {/* first card */}
 
-<Card className="col-md-3 border-0 shadow">
+<Card className="col-md-3 border-0 shadow btn-grad2 pt-3">
     <Card.Img variant="top" src={shoes4} />
     <Card.Body>
       <Card.Text>
@@ -98,7 +103,7 @@ function Home() {
 
 {/* 2nd card */}
 
-<Card className="col-md-3 border-0 shadow">
+<Card className="col-md-3 border-0 shadow btn-grad2 pt-3">
     <Card.Img variant="top" src={shoes5} />
     <Card.Body>
       <Card.Text>
@@ -109,14 +114,137 @@ function Home() {
 
   {/* 3rd card */}
 
-  <Card className="col-md-3 border-0 shadow">
-    <Card.Img variant="top" src={shoes6} />
+  <Card className="col-md-3 border-0 shadow btn-grad2 pt-3">
+    <Card.Img variant="top" src={shoes7} />
     <Card.Body>
       <Card.Text>
-        <h5 className='text-center'>Shop Mens's Collection</h5>
+        <h5 className='text-center'>Shop Men's Collection</h5>
       </Card.Text>
     </Card.Body>
   </Card>
+
+</div>
+
+<h4 className="my-5 text-center h3 pt-3">Best Seller's</h4>
+
+<div>
+  {/* Best seller part-1 */}
+  <div className="d-sm-flex justify-content-around pt-5">
+
+  {/* first card */}
+
+<Card className="col-md-3 border-0 shadow bg-dark pt-3">
+    <Card.Img variant="top" src={shoes4} />
+    <Card.Body>
+      <Card.Text>
+        <h5 className='text-center text-white'>Women summer shoes Rs: 850/-</h5>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+{/* 2nd card */}
+
+<Card className="col-md-3 border-0 shadow bg-warning pt-3">
+    <Card.Img variant="top" src={shoes5} />
+    <Card.Body>
+      <Card.Text>
+        <h5 className='text-center'>Women summer shoes Rs: 1150/-</h5>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+  {/* 3rd card */}
+
+  <Card className="col-md-3 border-0 shadow bg-danger pt-3">
+    <Card.Img variant="top" src={shoes8} />
+    <Card.Body>
+      <Card.Text>
+        <h5 className='text-center'>Men's shoes Rs: 1350/-</h5>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+</div>
+  {/* part-1 end */}
+
+{/* Best Seller part-2 */}
+<div className="d-sm-flex justify-content-around pt-5">
+
+  {/* first card */}
+
+<Card className="col-md-3 border-0 shadow bg-info pt-3">
+    <Card.Img variant="top" src={shoes11} />
+    <Card.Body>
+      <Card.Text>
+        <h5 className='text-center text-light'>Women Khusa Rs: 650/-</h5>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+{/* 2nd card */}
+
+<Card className="col-md-3 border-0 shadow bg-secondary pt-3">
+    <Card.Img variant="top" src={shoes7} />
+    <Card.Body>
+      <Card.Text>
+        <h5 className='text-center text-light'>Men's winter shoes Rs: 1500/-</h5>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+  {/* 3rd card */}
+
+  <Card className="col-md-3 border-0 shadow bg-success pt-3">
+    <Card.Img variant="top" src={shoes3} />
+    <Card.Body>
+      <Card.Text>
+        <h5 className='text-center'>Women Sandals Rs: 750/-</h5>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+</div>
+{/* part-2 end */}
+
+{/* Best Seller part-3 */}
+
+<div className="d-sm-flex justify-content-around pt-5">
+
+  {/* first card */}
+
+<Card className="col-md-3 border-0 shadow bg-danger pt-3">
+    <Card.Img variant="top" src={shoes9} />
+    <Card.Body>
+      <Card.Text>
+        <h5 className='text-center text-light'>Women Khusa Rs: 750/-</h5>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+{/* 2nd card */}
+
+<Card className="col-md-3 border-0 shadow bg-warning pt-3">
+    <Card.Img variant="top" src={shoes1} />
+    <Card.Body>
+      <Card.Text>
+        <h5 className='text-center'>Women Heals Rs: 1250/-</h5>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+  {/* 3rd card */}
+
+  <Card className="col-md-3 border-0 shadow bg-dark pt-3">
+    <Card.Img variant="top" src={shoes10} />
+    <Card.Body>
+      <Card.Text>
+        <h5 className='text-center text-light'>Women Khusa Rs: 750/-</h5>
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+</div>
+{/* Part-3 end */}
 
 </div>
 
