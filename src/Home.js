@@ -20,7 +20,7 @@ function Home() {
           <header>
            <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className="fixed-top px-3 p-0">
              <div className="d-flex">
-  <Navbar.Brand href="#home"><img src={logo} alt="Logo" className="col-md-9 col-8"/></Navbar.Brand>
+  <img src={logo} alt="Logo" className="col-md-9 col-8"/>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   </div>
   <Navbar.Collapse id="responsive-navbar-nav">
@@ -28,8 +28,8 @@ function Home() {
       <Nav.Link href="#Men" className="text-light">Men</Nav.Link>
       <Nav.Link href="#Women" className="px-sm-3 text-light">Women</Nav.Link>
       <Nav.Link href="#Kids" className="text-light">Kids</Nav.Link>
-      <Nav.Link href="#About" className="px-sm-3 text-light"><Link to="/AboutUs">About Us</Link></Nav.Link>
-      <Nav.Link href="#Contact" className="text-light">Contact</Nav.Link>
+      <Nav.Link href="#About" className="px-sm-3"><Link to="/AboutUs" className="text-light text-decoration-none">About Us</Link></Nav.Link>
+      <Nav.Link href="#Contact" className="text-light"><Link to="/Contact" className="text-light text-decoration-none">Contact</Link></Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
@@ -72,9 +72,7 @@ function Home() {
   <Carousel.Item>
     <img
       className="d-block col-md-6 mx-auto"
-      src={shoes7}
-      // src="https://www.netclipart.com/pp/m/209-2099851_leather-shoes-png-shoes-for-men-png.png"
-      alt="Third slide"
+      src={shoes7} alt="Third slide"
     />
 
     <Carousel.Caption>
@@ -103,8 +101,8 @@ function Home() {
 
 {/* 2nd card */}
 
-<Card className="col-md-3 border-0 shadow btn-grad2 pt-3">
-    <Card.Img variant="top" src={shoes5} />
+<Card className="col-md-3 border-0 shadow btn-grad2 pt-3 my-5 my-sm-0">
+    <Card.Img variant="top" src={shoes2} />
     <Card.Body>
       <Card.Text>
         <h5 className='text-center'>Shop Women's Collection</h5>
@@ -144,7 +142,7 @@ function Home() {
 
 {/* 2nd card */}
 
-<Card className="col-md-3 border-0 shadow bg-warning pt-3">
+<Card className="col-md-3 border-0 shadow bg-warning pt-3 my-5 my-sm-0">
     <Card.Img variant="top" src={shoes5} />
     <Card.Body>
       <Card.Text>
@@ -183,7 +181,7 @@ function Home() {
 
 {/* 2nd card */}
 
-<Card className="col-md-3 border-0 shadow bg-secondary pt-3">
+<Card className="col-md-3 border-0 shadow bg-secondary pt-3 my-5 my-sm-0">
     <Card.Img variant="top" src={shoes7} />
     <Card.Body>
       <Card.Text>
@@ -208,7 +206,7 @@ function Home() {
 
 {/* Best Seller part-3 */}
 
-<div className="d-sm-flex justify-content-around pt-5">
+<div className="d-sm-flex justify-content-around pt-5 pb-5">
 
   {/* first card */}
 
@@ -223,7 +221,7 @@ function Home() {
 
 {/* 2nd card */}
 
-<Card className="col-md-3 border-0 shadow bg-warning pt-3">
+<Card className="col-md-3 border-0 shadow bg-warning pt-3 my-5 my-sm-0">
     <Card.Img variant="top" src={shoes1} />
     <Card.Body>
       <Card.Text>
@@ -247,6 +245,21 @@ function Home() {
 {/* Part-3 end */}
 
 </div>
+
+<footer  className="bg-secondary">
+  <p className="text-white text-center pt-3">Also Follow and support us on Social Media</p>
+  <div className="d-flex justify-content-around py-4">
+    <a href="https://www.instagram.com/_softstep/">
+      <img src="https://img.pngio.com/hq-instagram-png-transparent-instagrampng-images-pluspng-instagram-black-png-512_512.png" className="my-width" alt="fb-icon"/>
+    </a>
+    <a href="https://www.instagram.com/_softstep/">
+      <img src="https://cdn.iconscout.com/icon/free/png-512/facebook-285-893479.png" className="my-width" alt="fb-icon"/>
+    </a>
+    <a href="https://www.instagram.com/_softstep/">
+      <img src="https://www.pngkey.com/png/full/0-5396_news-cls-lalsa-twitter-icon-white-vector.png" className="my-width" alt="fb-icon"/>
+    </a>
+  </div>
+</footer>
 
 </body>
 {/* End of body */}

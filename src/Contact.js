@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav} from 'react-bootstrap';
 import './App.css';
 import logo from './logo.png';
-import shoes12 from './shoes12.jpg';
+// import shoes12 from './shoes12.jpg';
 
-function AboutUs() {
+function Contact() {
     return(
         <div className="bg-light">
           <header>
@@ -30,24 +30,40 @@ function AboutUs() {
 
 {/* Start of body */}
 <body className="bg-light">
-<h2 className="text-center mt-5 mb-5">About Us</h2>
+<h2 className="text-center mt-5 mb-5">Contact Us</h2>
 
-<div className="d-lg-flex">
-  <img src={shoes12} alt='shoes' className="col col-lg-6 mb-auto"/>
+<div className="col">
+    <h5 className="font-weight-normal">
+    <img className="my-width-2 align-bottom mr-2 ml-sm-4" src="https://www.iconfinder.com/data/icons/unicons-vector-icons-pack/32/location-512.png" alt="location mark"/>
+    Adress: New Katarian Market, F-block Opposite to Al-Rehman Plaza.
+    </h5>
+</div>
 
-<div>
-<h5 className="col col-sm-7 text-center mx-auto py-5 font-weight-normal">We are small Footwear store trying to provide everyone Quality and a reliable products And to Ensure that our customers get what they paid for.
-    We started along time ago about 17 to 18 years back. But as the Era of technology began and is taking over everything and making it everything easy for
-    us. We can just sit in our couch and order what ever we want to buy online its just one click away. So we decide its time that we also do the same and
-    Make it easy for everyone and for the people so that everyone can reach us and get good Quality and Upto date shoes they want.</h5>
-  
+<div className="my-4 py-2 col">
+    <h5 className="font-weight-normal">
+    <img className="align-bottom mr-2 ml-sm-4" src="https://e7.pngegg.com/pngimages/476/378/png-clipart-black-telephone-computer-icons-mobile-phones-telephone-call-icon-design-phone-icon-miscellaneous-hand.png" alt="phone icon" style={{width: "26px"}}/>
+    Phone: 03030158986 <strong>or</strong> 03473727277
+    </h5>
+</div>
 
-<p className="col col-sm-7 text-center mx-auto text-muted">This is just the start We hope to keep providing great service and continue to get better and better. We will need all the support we can get so if
-    you like our shoes and our page do recommend and tell others about us.<br/> and if your facing any problem on our behalf do contact us we will do our best
-    to resolve any issue regarding our page or product and make our Website and page better for you. </p>
-    </div>
+<div className="mb-4 col">
+    <h5 className="font-weight-normal">
+    <img className="align-bottom mr-2 ml-sm-4" src="https://icon-library.com/images/paper-plane-icon/paper-plane-icon-13.jpg" alt="phone icon" style={{width: "26px"}}/>
+    Email: raonouman12345@gmail.com
+    </h5>
+</div>
 
-    </div>
+<div className="ml-4">
+    <p>
+    <img className="mt-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQakqkkJuSrRiV_MER6BGX14P-_giPvQ5NCQQ&usqp=CAU" alt="arrow" style={{width: "26px"}}/>
+     *Click here to view full Map*
+     </p>
+</div>
+
+<div className="text-center card mb-5 border-secondary">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d415.1869646155003!2d73.05754319436674!3d33.64431516191042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df951a2c
+928363%3A0x2a34e3d4b1d9d361!2sBobby%20Shoes!5e0!3m2!1sen!2s!4v1600781757075!5m2!1sen!2s"  ></iframe>
+</div>
 
 <footer  className="bg-secondary">
   <p className="text-white text-center pt-3">Also Follow and support us on Social Media</p>
@@ -70,4 +86,4 @@ function AboutUs() {
         </div>
     );
 }
-export default AboutUs;
+export default Contact;
