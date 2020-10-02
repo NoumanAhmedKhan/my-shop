@@ -10,15 +10,14 @@ function AboutUs() {
         <div className="bg-light">
           <header>
            <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className="px-3 p-0">
-             <div className="d-flex">
+             <div className="d-flex justify-content-between">
   <Navbar.Brand href="/"><img src={logo} alt="Logo" className="w-75"/></Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   </div>
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ml-auto">
-      <Nav.Link href="#Men" className="text-light">Men</Nav.Link>
-      <Nav.Link href="#Women" className="px-sm-3 text-light">Women</Nav.Link>
-      <Nav.Link href="#Kids" className="text-light">Kids</Nav.Link>
+    <Nav.Link href="#Men" className="text-light"><Link to='/Men' className="text-decoration-none text-light">Men</Link></Nav.Link>
+      <Nav.Link href="#Women" className="px-sm-3 text-light text-decoration-none"><Link to="/Women" className="text-light text-decoration-none">Women</Link></Nav.Link>
       <Nav.Link href="#About" className="px-sm-3"><Link to="/AboutUs" className="text-light text-decoration-none">About Us</Link></Nav.Link>
       <Nav.Link href="#Contact" className="text-light"><Link to="/Contact" className="text-light text-decoration-none">Contact</Link></Nav.Link>
     </Nav>
@@ -49,7 +48,7 @@ function AboutUs() {
 
     </div>
 
-<footer  className="bg-secondary">
+<footer  className="btn-grad">
   <p className="text-white text-center pt-3">Also Follow and support us on Social Media</p>
   <div className="d-flex justify-content-around py-4">
     <a href="https://www.instagram.com/_softstep/">

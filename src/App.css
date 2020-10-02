@@ -1,14 +1,36 @@
 .btn-grad {background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%) !important;
  }
  .btn-grad2{
-    /* background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  background-image: linear-gradient(to top, #d88080, #d0957d, #c5a788, #beb79e, #bfc2b8);
+ }
+ .btn-grad3{
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+ }
+ .btn-grad4{
+  background-image: linear-gradient(to bottom, #aba9cb, #a7a5be, #a2a0b1, #9d9ca4, #989898);
+ }
+ .btn-grad5{
+  background-image: linear-gradient(to top, #4a4d53, #58676e, #698383, #849e90, #aeb79a);
+ }
+ .btn-grad6{
+  background-image: linear-gradient(to top, #604d4d, #6e615a, #7a766c, #878b84, #989f9c);
+ }
+ .btn-grad7{
+  background-image: linear-gradient(to top, #82bc8a, #8fbe98, #9dc1a5, #abc2b1, #bac4bd);
+ }
+ .btn-grad8{
+  background-image: linear-gradient(to top, #9d6464, #ae7d7d, #be9797, #ceb1b1, #decccc);
+ }
+ .btn-grad9{
+  background-image: linear-gradient(to top, #b8bc9a, #cabb99, #daba9e, #e8b9a9, #f0b9b9);
+ }
+ .btn-grad10{
+  background-image: linear-gradient(to top, #4f4f4f, #666666, #7f7d7e, #989696, #b3afaf);
  }
  .my-width{
-
    width: 32px;
  }
  .my-width-2{
   width: 20px;
  }
+ 
