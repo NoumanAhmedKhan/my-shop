@@ -27,10 +27,16 @@
  .btn-grad10{
   background-image: linear-gradient(to top, #4f4f4f, #666666, #7f7d7e, #989696, #b3afaf);
  }
- .my-width{
+ .insta-width{
    width: 32px;
  }
  .my-width-2{
   width: 20px;
+ }
+ .fb-width{
+   width: 37px;
+ }
+ .twitter-width{
+   width: 29.5px;
  }
  

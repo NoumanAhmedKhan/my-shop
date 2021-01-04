@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav} from 'react-bootstrap';
 import './App.css';
 import logo from './logo.png';
+import fb from './fb.png';
+import insta from './insta.png';
+import twitter from './twitter.png';
+import phoneicon from './phoneicon.png';
+import paperplane from './paperplane.png';
+import arrow from './arrow.png';
 // import shoes12 from './shoes12.jpg';
 
 function Contact() {
@@ -40,21 +46,21 @@ function Contact() {
 
 <div className="my-4 py-2 col">
     <h5 className="font-weight-normal">
-    <img className="align-bottom mr-2 ml-sm-4" src="https://e7.pngegg.com/pngimages/476/378/png-clipart-black-telephone-computer-icons-mobile-phones-telephone-call-icon-design-phone-icon-miscellaneous-hand.png" alt="phone icon" style={{width: "26px"}}/>
+    <img className="align-bottom mr-2 ml-sm-4" src={phoneicon} alt="phone icon" style={{width: "26px"}}/>
     Phone: 03030158986 <strong>or</strong> 03473727277
     </h5>
 </div>
 
 <div className="mb-4 col">
     <h5 className="font-weight-normal">
-    <img className="align-bottom mr-2 ml-sm-4" src="https://icon-library.com/images/paper-plane-icon/paper-plane-icon-13.jpg" alt="phone icon" style={{width: "26px"}}/>
+    <img className="align-bottom mr-2 ml-sm-4" src={paperplane} alt="phone icon" style={{width: "26px"}}/>
     Email: raonouman12345@gmail.com
     </h5>
 </div>
 
 <div className="ml-4">
     <p>
-    <img className="mt-3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQakqkkJuSrRiV_MER6BGX14P-_giPvQ5NCQQ&usqp=CAU" alt="arrow" style={{width: "26px"}}/>
+    <img className="mt-3 ml-3 mr-1" src={arrow} alt="arrow" style={{width: "26px"}}/>
      *Click here to view full Map*
      </p>
 </div>
@@ -66,15 +72,15 @@ function Contact() {
 
 <footer  className="btn-grad">
   <p className="text-white text-center pt-3">Also Follow and support us on Social Media</p>
-  <div className="d-flex justify-content-around py-4">
+  <div className="d-flex justify-content-around pb-3">
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://img.pngio.com/hq-instagram-png-transparent-instagrampng-images-pluspng-instagram-black-png-512_512.png" className="my-width" alt="fb-icon"/>
+      <img src={fb} className="fb-width" alt="fb-icon"/>
     </a>
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://cdn.iconscout.com/icon/free/png-512/facebook-285-893479.png" className="my-width" alt="fb-icon"/>
+      <img src={insta} className="insta-width" alt="insta-icon"/>
     </a>
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://www.pngkey.com/png/full/0-5396_news-cls-lalsa-twitter-icon-white-vector.png" className="my-width" alt="fb-icon"/>
+      <img src={twitter} className="twitter-width" alt="twitter-icon"/>
     </a>
   </div>
 </footer>

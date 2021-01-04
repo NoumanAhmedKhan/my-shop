@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, Card} from 'react-bootstrap';
 import './App.css';
 import logo from './logo.png';
+import fb from './fb.png';
+import insta from './insta.png';
+import twitter from './twitter.png';
 import Men1 from './Men1.jpg';
 import Men2 from './Men2.jpg';
 import Men3 from './Men3.jpg';
 import Men5 from './Men5.jpg';
-// import Men4 from './Men4.jpg';
-// import Men6 from './Men6.jpg';
-// import Men7 from './Men7.jpg';
-// import Men8 from './Men8.jpg';
 import Men9 from './Men9.jpg';
 import Men10 from './Men10.jpg';
 import Men12 from './Men12.jpg';
@@ -255,15 +254,15 @@ function Men() {
 {/* Footer */}
 <footer  className="btn-grad">
   <p className="text-white text-center pt-3">Also Follow and support us on Social Media</p>
-  <div className="d-flex justify-content-around py-4">
+  <div className="d-flex justify-content-around pb-3">
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://img.pngio.com/hq-instagram-png-transparent-instagrampng-images-pluspng-instagram-black-png-512_512.png" className="my-width" alt="fb-icon"/>
+      <img src={fb} className="fb-width" alt="fb-icon"/>
     </a>
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://cdn.iconscout.com/icon/free/png-512/facebook-285-893479.png" className="my-width" alt="fb-icon"/>
+      <img src={insta} className="insta-width" alt="insta-icon"/>
     </a>
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://www.pngkey.com/png/full/0-5396_news-cls-lalsa-twitter-icon-white-vector.png" className="my-width" alt="fb-icon"/>
+      <img src={twitter} className="twitter-width" alt="twitter-icon"/>
     </a>
   </div>
 </footer>

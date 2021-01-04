@@ -3,6 +3,9 @@ import { Navbar, Nav, Carousel, Card} from 'react-bootstrap';
 import './App.css';
 import { Link } from 'react-router-dom';
 import logo from './logo.png';
+import fb from './fb.png';
+import insta from './insta.png';
+import twitter from './twitter.png';
 import shoes1 from './shoes1.jpg';
 import shoes2 from './shoes2.jpg';
 import shoes3 from './shoes3.jpg';
@@ -19,7 +22,7 @@ function Home() {
         <div>
           <header>
            <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className="fixed-top px-3 p-0">
-             <div className="d-flex justify-content-between">
+             <div className="d-flex pb-1 justify-content-between">
   <img src={logo} alt="Logo" className="col-md-9 col-8"/>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   </div>
@@ -44,7 +47,6 @@ function Home() {
     <img
       className="d-block col-md-6 mx-auto"
       src={shoes1}
-      // src="https://media.gq.com/photos/58d2ffe007aa190b6923421d/16:9/w_2560%2Cc_limit/m-gemeni-sneakers-lead.jpg"
       alt="First slide"
     />
     <Carousel.Caption>
@@ -57,7 +59,6 @@ function Home() {
     <img
       className="d-block mx-auto col-md-6"
       src={shoes2}
-      // src="https://images.squarespace-cdn.com/content/v1/54f9c79ce4b0a50e0977e31e/1474308301536-34XJUW4R332J8LY6DGKN/ke17ZwdGBToddI8pDm48kB8cKi1pFMTcZQoluKoowS9Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI773C_gNeGGW3c7_Cn8czDbNxZ7-i_pVpX7ZyKYajZuQ/image-asset.png"
       alt="Second slide"
     />
 
@@ -77,7 +78,9 @@ function Home() {
 
     <Carousel.Caption>
       <div>
+      <Link to="/Men">
     <button className="btn rounded-pill btn-grad"><h5 className="font-weight-normal text-white pt-1">Men Collection</h5></button>
+    </Link>
     </div>
     </Carousel.Caption>
   </Carousel.Item>
@@ -117,12 +120,14 @@ function Home() {
   {/* 3rd card */}
 
   <Card className="col-md-3 border-0 shadow btn-grad7 pt-3">
+    <Link to="Men">
     <Card.Img variant="top" src={shoes7} />
     <Card.Body>
       <Card.Text>
-        <h5 className='text-center'>Shop Men's Collection</h5>
+        <h5 className='text-center text-dark'>Shop Men's Collection</h5>
       </Card.Text>
     </Card.Body>
+    </Link>
   </Card>
 
 </div>
@@ -161,7 +166,7 @@ function Home() {
     <Card.Img variant="top" src={shoes8} />
     <Card.Body>
       <Card.Text>
-        <h5 className='text-center'>Men's shoes Rs: 1350/-</h5>
+        <h5 className='text-center text-white'>Men's shoes Rs: 1350/-</h5>
       </Card.Text>
     </Card.Body>
   </Card>
@@ -252,15 +257,15 @@ function Home() {
 
 <footer  className="btn-grad">
   <p className="text-white text-center pt-3">Also Follow and support us on Social Media</p>
-  <div className="d-flex justify-content-around py-4">
+  <div className="d-flex justify-content-around pb-3">
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://img.pngio.com/hq-instagram-png-transparent-instagrampng-images-pluspng-instagram-black-png-512_512.png" className="my-width" alt="fb-icon"/>
+      <img src={fb} className="fb-width" alt="fb-icon"/>
     </a>
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://cdn.iconscout.com/icon/free/png-512/facebook-285-893479.png" className="my-width" alt="fb-icon"/>
+      <img src={insta} className="insta-width" alt="insta-icon"/>
     </a>
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://www.pngkey.com/png/full/0-5396_news-cls-lalsa-twitter-icon-white-vector.png" className="my-width" alt="fb-icon"/>
+      <img src={twitter} className="twitter-width" alt="twitter-icon"/>
     </a>
   </div>
 </footer>

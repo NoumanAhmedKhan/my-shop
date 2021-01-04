@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav} from 'react-bootstrap';
 import './App.css';
 import logo from './logo.png';
+import fb from './fb.png';
+import insta from './insta.png';
+import twitter from './twitter.png';
 import shoes12 from './shoes12.jpg';
 
 function AboutUs() {
@@ -36,7 +39,7 @@ function AboutUs() {
 
 <div>
 <h5 className="col col-sm-7 text-center mx-auto py-5 font-weight-normal">We are small Footwear store trying to provide everyone Quality and a reliable products And to Ensure that our customers get what they paid for.
-    We started along time ago about 17 to 18 years back. But as the Era of technology began and is taking over everything and making it everything easy for
+    We started along time ago about 18 years back. But as the Era of technology began and is taking over everything and making it everything easy for
     us. We can just sit in our couch and order what ever we want to buy online its just one click away. So we decide its time that we also do the same and
     Make it easy for everyone and for the people so that everyone can reach us and get good Quality and Upto date shoes they want.</h5>
   
@@ -48,17 +51,17 @@ function AboutUs() {
 
     </div>
 
-<footer  className="btn-grad">
+    <footer  className="btn-grad">
   <p className="text-white text-center pt-3">Also Follow and support us on Social Media</p>
-  <div className="d-flex justify-content-around py-4">
+  <div className="d-flex justify-content-around pb-3">
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://img.pngio.com/hq-instagram-png-transparent-instagrampng-images-pluspng-instagram-black-png-512_512.png" className="my-width" alt="fb-icon"/>
+      <img src={fb} className="fb-width" alt="fb-icon"/>
     </a>
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://cdn.iconscout.com/icon/free/png-512/facebook-285-893479.png" className="my-width" alt="fb-icon"/>
+      <img src={insta} className="insta-width" alt="insta-icon"/>
     </a>
     <a href="https://www.instagram.com/_softstep/">
-      <img src="https://www.pngkey.com/png/full/0-5396_news-cls-lalsa-twitter-icon-white-vector.png" className="my-width" alt="fb-icon"/>
+      <img src={twitter} className="twitter-width" alt="twitter-icon"/>
     </a>
   </div>
 </footer>
